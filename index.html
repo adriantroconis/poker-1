@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Poker</title>
+	<link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+<body>
+	<section class="content">
+		<div class="popUp" id="loginPopup">
+			<h3>Log In</h3>
+			<input type="text" placeholder="User" require id="user"><br />
+			<input type="password" placeholder="Password" require id="pass">
+			<div class="controls">
+				<a href="#" class="submitBtn" id="login">Log In</a>
+				<a href="#" class="submitBtn" id="signup">Sign Up</a>
+			</div>
+		</div>
+	</section>
+	<script src="js/lib/require.js"></script>
+	<script>
+        require(['./js/main'], function (main) {
+            require(['../poker']);
+        });
+    </script>
+</body>
+</html>
